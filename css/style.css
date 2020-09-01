@@ -1,0 +1,155 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #48c5ce;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.title {
+    font-size: 26px;
+}
+
+section {
+    padding: 20px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer {
+    max-width: 230px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    float: right;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url('../images/down-arrow.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5%) center;
+}
+
+footer {
+    display: inline-block;
+    text-align: center;
+    padding: 40px;
+    background-color: #202121;
+}
+
+.picture {
+    width: 230px;
+
+}
+
+.description {
+    color: white;
+    max-width: 45%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 10%;
+    float: right;
+}
+
+.description p,
+.description h3 {
+    margin-bottom: 20px;
+}
+
+.description h3 {
+    font-size: 23px;
+}
+
+@media (max-width: 769px) {
+
+    footer{
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .description{
+    
+        max-width: 70%;
+        float: none;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .description h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .description p{
+        text-align: justify;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+
+    section{
+        background-position-x: 25%;
+        background-repeat: no-repeat;
+    }
+
+    .formContainer {
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    
+    footer {
+        text-align: unset;
+    }
+
+    .picture{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
